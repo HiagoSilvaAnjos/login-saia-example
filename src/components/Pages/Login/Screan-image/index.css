@@ -1,0 +1,52 @@
+.animationTitle {
+  animation: showElementAnimation 0.5s ease-in-out 1s forwards;
+}
+
+.animation_illustrationWrapper {
+  clip-path: circle(0% at right center);
+  animation: clipPathAnimation 0.8s ease-in 0.2s forwards;
+}
+
+.line {
+  width: 0%;
+  max-width: 30rem;
+  margin: 0.9rem 0 2rem;
+  margin-right: auto;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  opacity: 0;
+  animation: lineAnimation 0.5s ease-in-out 1.5s forwards;
+}
+
+.screenshotDashboard {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem 0 0 0;
+  background-image: url(../../../../assets/images/saia-screenshot-pagina-inicial.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  opacity: 0;
+  transform: translateY(5rem);
+  animation: showElementAnimation 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes showElementAnimation {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes clipPathAnimation {
+  100% {
+    clip-path: circle(150% at center center);
+  }
+}
+
+@keyframes lineAnimation {
+  100% {
+    width: 95%;
+    opacity: 1;
+  }
+}
