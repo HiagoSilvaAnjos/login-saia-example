@@ -1,7 +1,6 @@
 .loginFormContainer {
   width: 100%;
-  height: 100%;
-  min-height: 50rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +31,7 @@ img {
 .titleForm {
   color: #63c0d4;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 3.6rem;
   z-index: 1;
@@ -73,7 +72,6 @@ img {
 }
 
 .logoUFPA {
-  width: 100%;
   max-width: 5rem;
   opacity: 0;
   animation: showElementAnimation 0.5s ease-in-out 1.4s forwards;
@@ -88,7 +86,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .loginFormContainer {
-    min-height: unset;
+    /* min-height: unset; */
+    height: 90vh;
     padding: 0 1.5rem;
     overflow-y: scroll;
   }

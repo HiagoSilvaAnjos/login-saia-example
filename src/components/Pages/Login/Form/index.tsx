@@ -52,14 +52,16 @@ export const Form = () => {
               <Eye size={30} color="#0000004d" weight="bold" />
             </label>
           </div>
-          <button className="bg-[#63C0D4] w-full p-[18px] rounded-xl text-xs md:mb-[10rem] mb-[6rem] text-white font-bold transition-all ease-out duration-[0.5s] hover:bg-[#4d93a3]">
+          <button className="bg-[#63C0D4] w-full p-[18px] rounded-xl text-xs md:mb-[10rem] mb-[4rem] text-white font-bold transition-all ease-out duration-[0.5s] hover:bg-[#4d93a3]">
             ENVIAR
           </button>
         </form>
       </div>
-      <a className="logoUFPA" target="_blank" href="http://ufpa.br">
-        <img src={logoUfpa} alt="Logo da UFPA" />
-      </a>
+      <div className="logoUFPA">
+        <a target="_blank" href="http://ufpa.br">
+          <img src={logoUfpa} alt="Logo da UFPA" />
+        </a>
+      </div>
     </div>
   );
 };
