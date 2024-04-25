@@ -23,14 +23,14 @@ export const Form = () => {
           <h2 className="titleForm">Faça login na plataforma</h2>
         </div>
 
-        <div className="w-full lg:w-[450px]">
-          <form className="w-full flex flex-col gap-[2rem] items-center animationForm">
-            <div className="flex items-center justify-center w-full gap-2 border-b border-black/20">
+        <div className="form-container">
+          <form className="form-content">
+            <div className="form-input-container">
               <label className="pl-2" htmlFor="userName">
                 <User size={30} color="#0000004d" weight="bold" />
               </label>
               <input
-                className="flex-1 p-3 outline-none placeholder:font-bold placeholder:text-black/30"
+                className="form-input"
                 type="text"
                 name="userName"
                 id="userName"
@@ -38,12 +38,12 @@ export const Form = () => {
                 required
               />
             </div>
-            <div className="flex items-center justify-center w-full gap-2 border-b border-black/20">
+            <div className="form-input-container">
               <label className="pl-2" htmlFor="userPassword">
                 <Key size={30} color="#0000004d" weight="bold" />
               </label>
               <input
-                className="flex-1 p-3 outline-none placeholder:font-bold placeholder:text-black/30"
+                className="form-input"
                 type="password"
                 name="userPassword"
                 placeholder="Senha"
@@ -54,9 +54,7 @@ export const Form = () => {
                 <Eye size={30} color="#0000004d" weight="bold" />
               </label>
             </div>
-            <button className="bg-[#63C0D4] w-full p-[18px] rounded-xl text-xs  text-white font-bold transition-all ease-out duration-[0.5s] hover:bg-[#4d93a3]">
-              ENVIAR
-            </button>
+            <button className="form-button">ENVIAR</button>
           </form>
         </div>
       </div>

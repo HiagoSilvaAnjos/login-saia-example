@@ -1,4 +1,27 @@
-.animationTitle {
+.screan-container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0 0 4rem;
+  background-color: #63c0d4;
+  border-top-left-radius: 2rem /* 32px */;
+  border-bottom-left-radius: 2rem /* 32px */;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  clip-path: circle(0% at right center);
+  animation: clipPathAnimation 0.8s ease-in 0.2s forwards;
+}
+
+.screan-title {
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-1.5rem);
   animation: showElementAnimation 0.5s ease-in-out 1s forwards;
 }
 
@@ -48,5 +71,13 @@
   100% {
     width: 95%;
     opacity: 1;
+  }
+}
+
+/* Media queires */
+
+@media screen and (min-width: 768px) {
+  .screan-container {
+    display: flex;
   }
 }
