@@ -165,3 +165,17 @@ img {
     opacity: 1;
   }
 }
+
+/* Utilitis class */
+
+.input-focus {
+  border-bottom-color: #4c93a3;
+}
+
+.icon-user-focus {
+  color: #4c93a3;
+}
+
+.icon-user-blur {
+  color: #0000004d;
+}
