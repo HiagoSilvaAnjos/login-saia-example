@@ -186,6 +186,7 @@ img {
 /* utilitis class success / error*/
 
 .input-focus-success {
+  color: #4de211;
   transition: all ease-in-out 100ms;
   border-bottom-color: #4de211;
 }
@@ -200,6 +201,7 @@ img {
 }
 
 .input-focus-error {
+  color: #df3806;
   transition: all ease-in-out 100ms;
   border-bottom-color: #df3806;
 }
