@@ -8,13 +8,16 @@ import { Eye, EyeSlash, Key, User } from "@phosphor-icons/react";
 
 import { useState } from "react";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export const Form = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [userName, setUserName] = useState("");
   const [userPassword, setUserPassword] = useState("");
+
+  console.log(userName);
+  console.log(userPassword);
 
   const [styleInputPassword, setStyleInputPassword] = useState(false);
   const [styleInputUserName, setStyleInputUserName] = useState(false);
