@@ -117,6 +117,7 @@ export const Form = () => {
                 id="userName"
                 value={userName}
                 placeholder="Nome de Usuário"
+                autoComplete="off"
                 required
               />
             </div>
@@ -145,6 +146,7 @@ export const Form = () => {
                 name="userPassword"
                 placeholder="Senha"
                 id="userPassword"
+                autoComplete="off"
                 required
               />
               <label
