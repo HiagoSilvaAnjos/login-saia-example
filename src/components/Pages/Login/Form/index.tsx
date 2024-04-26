@@ -3,10 +3,16 @@ import logoUfpa from "../../../../assets/images/brasao-ufpa-normal.png";
 import logoSaiaGrafico from "../../../../assets/images/logo-saia-grafico.png";
 
 import "./index.css";
+
 import { Eye, EyeSlash, Key, User } from "@phosphor-icons/react";
+
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 export const Form = () => {
+  const navigate = useNavigate();
+
   const [userName, setUserName] = useState("");
   const [userPassword, setUserPassword] = useState("");
 
