@@ -169,13 +169,46 @@ img {
 /* Utilitis class */
 
 .input-focus {
+  transition: all ease-in-out 100ms;
   border-bottom-color: #4c93a3;
 }
 
 .icon-user-focus {
+  transition: all ease-in-out 100ms;
   color: #4c93a3;
 }
 
 .icon-user-blur {
+  transition: all ease-in-out 100ms;
   color: #0000004d;
+}
+
+/* utilitis class success / error*/
+
+.input-focus-success {
+  transition: all ease-in-out 100ms;
+  border-bottom-color: #4de211;
+}
+
+.icon-user-focus-success {
+  transition: all ease-in-out 100ms;
+  color: #4de211;
+}
+
+.button-focus-success {
+  background-color: #4de211;
+}
+
+.input-focus-error {
+  transition: all ease-in-out 100ms;
+  border-bottom-color: #df3806;
+}
+
+.icon-user-focus-error {
+  transition: all ease-in-out 100ms;
+  color: #df3806;
+}
+
+.button-focus-error {
+  background-color: #df3806;
 }
