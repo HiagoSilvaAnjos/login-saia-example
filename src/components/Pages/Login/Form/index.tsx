@@ -115,6 +115,7 @@ export const Form = () => {
                 type="text"
                 name="userName"
                 id="userName"
+                value={userName}
                 placeholder="Nome de Usuário"
                 required
               />
